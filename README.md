@@ -401,46 +401,13 @@ custom_config = {
 
 results = run_single_scenario(custom_config, 6, use_gui=False)
 ```
-
-### Visualizing Results
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Plot error comparison
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.plot(results['kalman']['errors'], 'b-', label='KF', alpha=0.7)
-ax.plot(results['particle']['errors'], 'r-', label='PF', alpha=0.7)
-ax.set_xlabel('Time Step')
-ax.set_ylabel('Error (m)')
-ax.set_title('Localization Error Over Time')
-ax.legend()
-ax.grid(True, alpha=0.3)
-plt.show()
-```
-
 ---
 
 ## 📝 Dependencies
 
-### Required Packages
-
-```
-python >= 3.8
-numpy >= 1.20.0
-matplotlib >= 3.3.0
-pybullet >= 3.2.5
-pybullet-planning >= 0.5.0
-```
-
 ### Installation
 
-```bash
-pip install numpy matplotlib pybullet pybullet-planning
-```
-
-Or use the provided install script:
+Use the provided install script:
 
 ```bash
 ./install.sh
@@ -558,16 +525,8 @@ Or use the provided install script:
 ## 📚 References
 
 1. LaValle, S. M. (2006). *Planning Algorithms*. Cambridge University Press.
-   - Chapter 8: Feedback Motion Planning
-   - Chapter 9: Sensor-Based Planning
 
 2. Boyd, S., & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
-   - Chapter 7: Statistical Estimation
-   - Appendix C: Numerical Linear Algebra Background
-
-3. Thrun, S., Burgard, W., & Fox, D. (2005). *Probabilistic Robotics*. MIT Press.
-   - Chapter 4: Nonparametric Filters (Particle Filters)
-   - Chapter 3: Gaussian Filters (Kalman Filters)
 
 ---
 
@@ -584,17 +543,11 @@ Contributions are welcome! Areas for extension:
    - Extended Kalman Filter (EKF)
    - Unscented Kalman Filter (UKF)
    - Adaptive Particle Filter (variable N)
-   - Rao-Blackwellized Particle Filter
 
 3. **Environments:**
    - Outdoor navigation (GPS coordinates)
    - 3D environments (aerial robots)
    - Multi-robot scenarios
-
-4. **Performance Optimization:**
-   - GPU-accelerated particle filter
-   - Parallel resampling algorithms
-   - Adaptive noise estimation
 
 ---
 
