@@ -7,7 +7,6 @@
 A comprehensive comparative study of Kalman Filter (KF) and Particle Filter (PF) for robot localization in realistic indoor environments. This project demonstrates when each filter excels and identifies catastrophic failure cases where Kalman Filters produce physically impossible estimates.
 
 **Authors:** Thirulok Sundar Mohan Rasu, Ravindran Vasoor Saravanan  
-**Course:** ROB 422 - Introduction to Algorithmic Robotics  
 **Institution:** University of Michigan
 
 ---
