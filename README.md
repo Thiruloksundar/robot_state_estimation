@@ -36,7 +36,7 @@ We implemented both filters on a PR2 robot navigating through:
 ## 📁 Project Structure
 
 ```
-robot_state_estimation/robot-localization/codes/
+robot_state_estimation/robot_localization/
 ├── demo.py                              # Main demonstration script
 ├── install.sh                           # Package installation script
 │
@@ -66,7 +66,7 @@ robot_state_estimation/robot-localization/codes/
 ```bash
 # Clone the repository
 git clone https://github.com/Thiruloksundar/robot_state_estimation.git
-cd robot_state_estimation/robot-localization/
+cd robot_state_estimation/robot_localization/
 
 # Install dependencies
 chmod +x install.sh
