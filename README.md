@@ -36,7 +36,7 @@ We implemented both filters on a PR2 robot navigating through:
 ## 📁 Project Structure
 
 ```
-robot-localization/
+robot_state_estimation/robot-localization/codes/
 ├── demo.py                              # Main demonstration script
 ├── install.sh                           # Package installation script
 │
@@ -54,9 +54,7 @@ robot-localization/
 ├── symmetric_path.py                    # Path planning for symmetric environment
 │
 ├── noise_configurations.py              # Scenario configurations
-├── obstacle_checker.py                  # Collision detection system
-│
-└── README.md                            # This file
+└── obstacle_checker.py                  # Collision detection system
 ```
 
 ---
@@ -67,8 +65,8 @@ robot-localization/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/robot-localization.git
-cd robot-localization
+git clone https://github.com/thiruloksundar/robot_state_estimation.git
+cd robot_state_estimation
 
 # Install dependencies
 chmod +x install.sh
@@ -81,9 +79,6 @@ chmod +x install.sh
 # Run all 5 scenarios (15-25 minutes)
 python3 demo.py
 
-# Select visualization mode when prompted:
-# 1 = Fast mode (no GUI, ~15 min)
-# 2 = Visualization mode (with GUI, ~25 min)
 ```
 
 ### Output
