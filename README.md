@@ -65,7 +65,7 @@ robot_state_estimation/robot-localization/codes/
 
 ```bash
 # Clone the repository
-git clone https://github.com/thiruloksundar/robot_state_estimation.git
+git clone https://github.com/Thiruloksundar/robot_state_estimation.git
 cd robot_state_estimation
 
 # Install dependencies
